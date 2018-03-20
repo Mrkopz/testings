@@ -17,7 +17,7 @@ namespace AreaFinder
             };
 
             //var result = Solver(area, new Tuple<int, int>(1, 0));
-            var result = QuerySolver.Caculate(area, new Tuple<int, int>(1, 0));
+            var result = QueueSolver.Caculate(area, new Tuple<int, int>(1, 0));
 
             Console.WriteLine(result);
             Console.ReadLine();
