@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AreaFinder
 {
-    public class QuerySolver
+    public class QueueSolver
     {
         public static int Caculate(int[,] area, Tuple<int, int> startPoint)
         {
