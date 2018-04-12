@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrome", "Palindrome\Pa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pow", "Pow\Pow.csproj", "{EE0281A2-4856-4AD9-9574-A678DBE7482B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverlappedDate", "OverlappedDate\OverlappedDate.csproj", "{773D5F9A-F189-4C98-BF47-8E5088FF7814}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{EE0281A2-4856-4AD9-9574-A678DBE7482B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE0281A2-4856-4AD9-9574-A678DBE7482B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE0281A2-4856-4AD9-9574-A678DBE7482B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773D5F9A-F189-4C98-BF47-8E5088FF7814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773D5F9A-F189-4C98-BF47-8E5088FF7814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773D5F9A-F189-4C98-BF47-8E5088FF7814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773D5F9A-F189-4C98-BF47-8E5088FF7814}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
