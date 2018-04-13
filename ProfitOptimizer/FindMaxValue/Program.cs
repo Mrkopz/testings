@@ -21,7 +21,23 @@ namespace FindMaxValue
 
         private static Tuple<int, int> GetMaxTwo(IEnumerable<int> values)
         {
-            throw new NotImplementedException();
+            var firstValue = int.MinValue;
+            var secondValue = int.MinValue;
+
+            foreach (var value in values)
+            {
+                if (value > firstValue)
+                {
+                    secondValue = firstValue;
+                    firstValue = value;
+                }
+                else if (value > secondValue)
+                {
+                    secondValue = value;
+                }   
+            }
+
+            return new Tuple<int, int>(firstValue, secondValue);
         }
     }
 }
