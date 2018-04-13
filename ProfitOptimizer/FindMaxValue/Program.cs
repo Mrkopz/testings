@@ -19,6 +19,8 @@ namespace FindMaxValue
             Console.ReadLine();
         }
 
+        
+
         private static Tuple<int, int> GetMaxTwo(IEnumerable<int> values)
         {
             var firstValue = int.MinValue;
@@ -34,10 +36,38 @@ namespace FindMaxValue
                 else if (value > secondValue)
                 {
                     secondValue = value;
-                }   
+                }
             }
 
             return new Tuple<int, int>(firstValue, secondValue);
+        }
+
+        private static int index = 0;
+        private static int firstValue = int.MinValue;
+        private static int secondValue = int.MinValue;
+
+        private static Tuple<int, int> GetMaxTwoRecursion(IEnumerable<int> values)
+        {
+            var valueArray = values.ToArray();
+
+            if (index == valueArray.Length)
+            {
+                return new Tuple<int, int>(firstValue, secondValue);
+            }
+
+            if (valueArray[index] > firstValue)
+            {
+                secondValue = firstValue;
+                firstValue = valueArray[index];
+            }
+            else if (valueArray[index] > secondValue)
+            {
+                secondValue = valueArray[index];
+            }
+
+            index++;
+
+            return GetMaxTwo(values);
         }
     }
 }
